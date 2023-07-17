@@ -35,7 +35,7 @@ void NextGreaterElementArray(int arr[], int n)
         }
     }
 }
-void NextGreaterElementStack(int arr[], int n)
+void NextGreaterElementStackRight(int arr[], int n)
 {
     stack<int> st;
     for(int i=0; i<n; i++)
@@ -57,6 +57,6 @@ int main()
     NextGreaterElementArray(arr,n);
     cout<<endl;
     cout<<"Using stack"<<endl;
-    NextGreaterElementStack(arr, n);
+    NextGreaterElementStackRight(arr, n);
 
 }
