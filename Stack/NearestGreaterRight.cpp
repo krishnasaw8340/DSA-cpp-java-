@@ -53,10 +53,7 @@ void nextsmallestRight(int arr[], int n)
         int temp = arr[i];
         for(int j=i+1; j<n; j++)
         {
-            if(arr[i]<arr[j])
-            {
-                cout<<arr[i];
-            }
+         
 
         }
     }
