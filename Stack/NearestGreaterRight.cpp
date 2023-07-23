@@ -24,6 +24,8 @@ vector<int> nextGreaterRight(int arr[], int n) {
     reverse(v.begin(), v.end());
 
     return v;
+    // Output is:
+    // 3 4 4 -1
 }
 vector<int> nextSmallerRight(int arr[], int n)
 {
