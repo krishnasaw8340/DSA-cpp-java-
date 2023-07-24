@@ -1,7 +1,6 @@
-package Stack;
+
 import java.util.*;
 public class   NearestGreaterRightJava {
-    public static int[] 
     public static void main(String[] args)
     {
         Scanner sc = new Scanner(System.in);
@@ -11,7 +10,7 @@ public class   NearestGreaterRightJava {
         {
             arr[i] = sc.nextInt();
         }
-        int[] nextGreaterToRight = nextGreaterRight(arr);
+        
 
     }
     
