@@ -11,8 +11,8 @@ void nextPermutaion(vector<int> arr)
     }
 }
 int main() {
-    // vector<int> arr = {3,1,2};
-    vector<int> arr = { 3, 2, 1, 0 };
+    vector<int> arr = {3,1,2};
+    // vector<int> arr = { 3, 2, 1, 0 };
     nextPermutaion(arr);
     return 0;
 }
