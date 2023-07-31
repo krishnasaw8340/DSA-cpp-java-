@@ -25,28 +25,44 @@ Step 6 : Final Sequence
 #include<algorithm>
 using namespace std;
 void nextPermutation(vector<int> arr){
-    int n = arr.size();
-    for(int i = n-2; i>=0; i--)
+    int n = arr.size(), i, j;
+    for(i = n-2; i>=0; i--)
     {
         if(arr[i]<arr[i+1])
         {
-            cout<<"pivot is found"<<arr[i]<<" "<<endl;
+            cout<<"pivot is found  "<<arr[i]<<" "<<endl;
             break;
         }
+    }
+    if (i < 0) {
+        reverse(arr.begin(), arr.end());
+    }
+    else{
+        for (j=n-1; j>i; j--)
+        {
+            if(arr[j] > arr[i])
+            {
+                break;
+            }
+
+            // pivot and successor
+            swap(arr[i], arr[j]);
+
+            // Minimize the suffix part:
+            reverse(arr.begin()+i+1, arr.end());
+        }
+    }
+     for (auto i : arr) {
+        cout << i << " ";
     }
 }
 int main()
 {
-    vector<int> arr = { 1, 2, 3, 6, 5, 4 };
+    // vector<int> arr = { 1, 2, 3, 6, 5, 4 };
+    vector<int> arr = {2,4,1,7,5,0};
  
     // Function call
     nextPermutation(arr);
- 
-    // Printing the answer
-    for (auto i : arr) {
-        cout << i << " ";
-    }
 
-    
     return 0;
 }
