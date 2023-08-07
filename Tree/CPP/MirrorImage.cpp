@@ -42,6 +42,7 @@ void preOrder(node* head)
 }
   void mirrorTree(node* root)
     {
+        // Resursion
         if (root == NULL)
             return;
         else {
