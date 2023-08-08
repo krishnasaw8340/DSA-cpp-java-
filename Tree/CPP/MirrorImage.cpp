@@ -46,6 +46,7 @@ void preOrder(node* head)
         if (root == NULL)
             return;
         else {
+        // temp node
         node* temp;
         mirrorTree(root->left);
         mirrorTree(root->right);
